@@ -4,6 +4,8 @@ A NES-style tribute that mixes **Super Mario Bros. World 1-1** with **Kung-Fu Ma
 
 You play a kung-fu fighter in a white gi and red pants, punching, kicking, and double-jumping across a 1-1-style overworld. All pixel art and chiptune are original — not ripped from Nintendo.
 
+DEMO at: https://kung-fu-mario.web.app/
+
 Built in **Godot 4.7** at a native **256×240** viewport with integer scaling.
 
 <p align="center">
