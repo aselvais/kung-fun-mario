@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="AIgame01"
+config/name="kung-fun-mario"
 run/main_scene="uid://bd3ptm221yvu4"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
