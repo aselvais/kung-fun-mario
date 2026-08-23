@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://eieu3f6ghgdy"]
+
+[ext_resource type="Script" uid="uid://y4wukn2s65h1" path="res://scripts/player.gd" id="1_o5qli"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wfyh"]
+size = Vector2(32, 32)
+
+[node name="Main" type="Node2D" unique_id=1015638983]
+
+[node name="Background" type="Polygon2D" parent="." unique_id=1010387125]
+z_index = -10
+color = Color(0.11764706, 0.16078432, 0.23137255, 1)
+polygon = PackedVector2Array(-800, -600, 800, -600, 800, 600, -800, 600)
+
+[node name="MarkerN" type="Polygon2D" parent="." unique_id=48679372]
+position = Vector2(0, -120)
+color = Color(0.98039216, 0.8, 0.08235294, 1)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="MarkerE" type="Polygon2D" parent="." unique_id=916761805]
+position = Vector2(200, 0)
+color = Color(0.9843137, 0.57254905, 0.23529412, 1)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="MarkerS" type="Polygon2D" parent="." unique_id=1441066434]
+position = Vector2(0, 120)
+color = Color(0.2901961, 0.87058824, 0.5019608, 1)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="MarkerW" type="Polygon2D" parent="." unique_id=597686438]
+position = Vector2(-200, 0)
+color = Color(0.972549, 0.44313726, 0.44313726, 1)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=888987170]
+script = ExtResource("1_o5qli")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1182614004]
+shape = SubResource("RectangleShape2D_0wfyh")
+
+[node name="Body" type="Polygon2D" parent="Player" unique_id=1322538218]
+color = Color(0.21960784, 0.7411765, 0.972549, 1)
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=743105557]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
